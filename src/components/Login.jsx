@@ -18,7 +18,7 @@ function Login() {
   const login = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8080/login", {
+      .post("https://employee-springboot-api-4kp4.onrender.com/login", {
         email: loginForm.email,
         password: loginForm.password,
       })
@@ -91,9 +91,9 @@ function Login() {
 
         <p className="text-center text-gray-500 text-sm mt-6">
           Don’t have an account?{" "}
-          <a href="/register" className="text-blue-600 hover:underline">
+          <Link to={"/register"} className="text-blue-600 hover:underline">
             Sign up
-          </a>
+          </Link>
         </p>
       </div>
     </div>

@@ -14,8 +14,9 @@ import React from 'react'
 
         
         <div class="flex space-x-6">
-          <a href="/login" class="text-white hover:text-gray-200 font-medium">Login</a>
-          <a href="/register" class="text-white hover:text-gray-200 font-medium">Register</a>
+          <Link to={"/login"}  class="text-white hover:text-gray-200 font-medium">Login</Link>
+          <Link to={"/register"}  class="text-white hover:text-gray-200 font-medium">Register</Link>
+
         </div>
 
       </div>

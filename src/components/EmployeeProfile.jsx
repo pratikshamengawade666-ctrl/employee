@@ -14,7 +14,7 @@ function EmployeeProfile() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/getById?id=${id}`)
+      .get(`https://employee-springboot-api-4kp4.onrender.com/getById?id=${id}`)
       .then((response) => setEmployee(response.data))
       .catch((error) => alert(error.message || "Something went wrong"));
   }, [id]);
@@ -29,7 +29,7 @@ function EmployeeProfile() {
     e.preventDefault(); // prevent page reload
 
     axios
-      .put(`http://localhost:8080/update`, employee)
+      .put(`https://employee-springboot-api-4kp4.onrender.com/update`, employee)
       .then((response) => {
         alert("Employee updated successfully!");
         setEmployee(response.data);
