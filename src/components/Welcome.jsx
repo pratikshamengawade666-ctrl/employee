@@ -1,6 +1,6 @@
 import React from 'react'
 import WelcomeMenu from './WelcomeMenu'
-import Footer from './footer'
+import Footer from './Footer'
 
 function Welcome() {
   return (
